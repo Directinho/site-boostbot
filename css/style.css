@@ -11,7 +11,9 @@
 :root{
     --color-light: #f4f4f4;
     --color-dark: #000000;
-    --color-dark-blue: #ff6600;
+    --color-light-blue: #43a4ee;
+    --color-dark-blue: #245ca9;
+    --background-blue: #dae9ff;
     --spacing-sm: 10px;
     --spacing-md: 20px;
     --spacing-lg: 30px;
@@ -19,9 +21,12 @@
 html {
     scroll-behavior: smooth;
 }
+
 section{
     height: 100dvh;
-
+}
+body {
+    background-color: var(--background-blue);
 }
 .hero{
     display: flex;
@@ -52,10 +57,8 @@ section{
 .textos-esquerda h2 {
     color: var(--color-dark);
     font-size: 36px; 
-}
-.hero-imagem {
-    background-color: blue;
 }   
+
 .hero-imagem img{
     width: 400px;
     height: auto;
@@ -88,7 +91,6 @@ button {
 }
 #areaAtuacao {
     padding: 80px 20px;
-    background-color: #f8f9fa;
     text-align: center;
 }
 
@@ -158,13 +160,49 @@ button {
     line-height: 1.6;
     font-size: 1rem;
 }
-.sobre {
-    padding: 80px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
+
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;       
+    gap: 40px;               
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 .sobre-principal {
-     width: 40%;
-    margin-right: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sobre-textos {
+    width: 60%;
     max-width: 520px;
+}
+.sobre-textos h6 {
+    color: var(--color-dark-blue);
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+}
+.textos-esquerda h3 {
+    color: var(--color-dark);
+    font-size: 36px; 
+}
+.textos-esquerda p {
+    color: var(--color-dark);
+    font-size: 20px; 
+}
+
+.sobre-imagem img{
+    width: 400px;
+    height: auto;
+    
+}
+.sobre-lista{
+    display: flex;
+    width: 40%;
+    max-width: 520px;
+    margin-right: 90px;
 }
