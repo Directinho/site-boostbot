@@ -22,7 +22,10 @@
 html {
     scroll-behavior: smooth;
 }
-
+a{
+    text-decoration: none;
+    color: var(--color-light);
+}
 section{
     height: 100dvh;
 }
@@ -37,6 +40,10 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+}
+.nome {
+    color: var(--color-blue);
+    font-size: 18px;
 }
 .hero-principal {
     display: flex;
